@@ -21,10 +21,7 @@
   <script>
     alert('直接获取：window.innerHeight:' + window.innerHeight);
     setTimeout(function() {
-      alert(
-        'setTimeout 0 后，在浏览器下一帧获取：window.innerHeight:' +
-          window.innerHeight
-      );
-    }, 0);
+      alert('setTimeout 1000ms 后：window.innerHeight:' + window.innerHeight);
+    }, 1000);
   </script>
 </html>
