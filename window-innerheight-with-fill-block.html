@@ -8,13 +8,15 @@
     />
     <title>bug: window innerHeight</title>
   </head>
+  <style>
+    #fill-block {
+      width: 100px;
+      height: 2000px;
+      background-color: cornsilk;
+    }
+  </style>
   <body>
-    <a href="/bug-of-wxwork-webkit/window-innerheight">页面没有元素撑开</a>
-    <br />
-    <br />
-    <a href="/bug-of-wxwork-webkit/window-innerheight-with-fill-block"
-      >页面由一个2000px（大于屏幕高度）的元素撑开</a
-    >
+    <div id="fill-block"></div>
   </body>
   <script>
     alert('window.innerHeight:' + window.innerHeight);
