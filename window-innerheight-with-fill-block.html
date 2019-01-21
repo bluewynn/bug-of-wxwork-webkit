@@ -19,6 +19,12 @@
     <div id="fill-block"></div>
   </body>
   <script>
-    alert('window.innerHeight:' + window.innerHeight);
+    alert('直接获取：window.innerHeight:' + window.innerHeight);
+    setTimeout(function() {
+      alert(
+        'setTimeout 0 后，在浏览器下一帧获取：window.innerHeight:' +
+          window.innerHeight
+      );
+    }, 0);
   </script>
 </html>
